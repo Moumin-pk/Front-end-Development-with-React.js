@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Box, Check Box, File Input</title>
+</head>
+<body>
+    
+    <!-- 1️⃣ SelectBox
+    2️⃣ Checkboxes
+    3️⃣ FIleInput
+    4️⃣ fieldset -->
+
+    
+    <form action="">
+        <fieldset>
+            <legend><h2>inquire🧨</h2></legend>
+     
+    
+        <label >
+            Name: <input type="text" placeholder="enter your name">
+        </label>
+        <br>
+        <label>
+            Address: <textarea name="" id="" cols="30" rows="10"></textarea>
+        </label>
+        <br>
+        <label for="gender">Gender: 
+            <input type="radio" value="M" name="gender"> Male
+            <input type="radio" value="f" name="gender"> Female
+            <input type="radio" value="o" name="gender">Other
+        </label>
+        <br>
+        <label for="">
+            country: <select>
+                <option value="">select a country</option>
+                <!-- Option group for Asia -->
+        <optgroup label="Asia">
+            <option value="PK">Pakistan</option>
+            <option value="IN">India</option>
+            <option value="CN">China</option>
+            <!-- Add more Asian countries here -->
+        </optgroup>
+
+        <!-- Option group for Europe -->
+        <optgroup label="Europe">
+            <option value="GB">United Kingdom</option>
+            <option value="DE">Germany</option>
+            <!-- Add more European countries here -->
+        </optgroup>
+
+        <!-- Option group for North America -->
+        <optgroup label="North America">
+            <option value="US">United States</option>
+            <option value="CA">Canada</option>
+            <!-- Add more North American countries here -->
+        </optgroup>
+
+        <!-- Option group for South America -->
+        <optgroup label="South America">
+            <option value="BR">Brazil</option>
+            <!-- Add more South American countries here -->
+        </optgroup>
+
+        <!-- Option group for Oceania -->
+        <optgroup label="Oceania">
+            <option value="AU">Australia</option>
+            <!-- Add more Oceanian countries here -->
+            </select>
+        </label>
+        <br>
+            Select your intrest
+     
+        <label for="">
+            <input type="checkbox" value="music">music
+        </label>
+    </label>
+   
+    <label>
+        <input type="checkbox" name="interest" value="sports">
+        Sports
+    </label>
+   
+    <label>
+        <input type="checkbox" name="interest" value="movies">
+        Movies
+    </label>
+
+    <label>
+        <input type="checkbox" name="interest" value="travel">
+        Travel
+    </label>
+ 
+    <label>
+        <input type="checkbox" name="interest" value="food">
+        Food
+    </label>
+
+    <label>
+        <input type="checkbox" name="interest" value="technology">
+        Technology
+    </label>
+
+    <label>
+        <input type="checkbox" name="interest" value="books">
+        Books
+    </label>
+    <br>
+    <label for="">
+        Uploade Image <input type="file" name="image">
+        <br>
+    </label>
+        <input type="submit" value="send">
+        <input type="reset" value="reset">
+    
+    </fieldset>
+        </form>
+</body>
+</html>
