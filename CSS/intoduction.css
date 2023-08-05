@@ -1,0 +1,27 @@
+
+/* CSS atand for 
+   Cascading Style Sheet🔥 */
+
+/* Describe how HTML elemnts are to 
+be displayed on screen */
+
+/* CSS cover multiple layout at once */
+/* 
+Type of CSS👋
+
+1️⃣ internel CSS
+     An internal Stylesheet holds CSS rules of the page in the head section of the Html file
+2️⃣ External CSS
+    An External style sheet is a file containing only CSS syntax.
+3️⃣ Inline CSS
+    Inline CSS allows you to apply a uniqe Style to one HTML element at a time. 
+*/
+
+/* What is CSS Selector👋
+
+Two main Class
+
+1️⃣ .class .eg.intro
+    selects all elements with Class="intro"
+2️⃣ #id   .eg #firstname
+    selects the elemnts with id="firstname" */
