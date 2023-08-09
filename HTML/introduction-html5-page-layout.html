@@ -6,52 +6,59 @@
     <title>Web Page Layout Using HTML5 tags</title>
     <style>
         .main {
+            display: block;
+            width: 1000px;
             height: 650px;
-            border: 5px double goldenrod;
             text-align: center;
             font-size: 40px;
+            color: whitesmoke;
         }
 
         header {
             height: 150px;
-            border: 5px double goldenrod;
+            background-color: #333;
         }
 
         nav {
             height: 50px;
-            border: 5px double goldenrod;
+            background-color: #444;
         }
-
-        .content-main {
-            background-color: red;
+        .content-main{
+            color: #444;
         }
-
-        section {
-            width: 600px;
-            height: 150px;
-            background-color: cadetblue;
-            display: inline-block;
-            float: left;
-        }
-
-        article {
-            width: 600px;
-            height: 150px;
-            background-color: indianred;
-            float: left;
-            display: inline-block;
-        }
-
-        aside {
+           .right{
             width: 400px;
             height: 300px;
-            background-color: cadetblue;
-            float: right;
-        }
+            float: left;
+            background-color: #ddd;
+           } 
+
+           .left{
+            width: 600px;
+            height: 300px;
+            float: left;
+            background-color: #f2f2f2;
+           }
+           section{
+            width: 600px;
+            height: 150px;
+            background-color: burlywood;
+           }
+           Article{
+            width: 600px;
+            height: 150px;
+            background-color: lightsalmon;
+           }
+           aside{
+            width: 400px;
+            height: 300px;
+           }
+
+       
 
         footer {
             height: 150px;
-            background-color: coral;
+            background-color:  #333;
             clear: both;
         }
     </style>
@@ -66,15 +73,19 @@
             NAV
         </nav>
         <div class="content-main">
+            <div class="left">
             <section> <!--Section-->
                 Section
             </section>
             <article> <!--article-->
                 Article
             </article>
+           </div>
+           <div class="right">
             <aside><!--asideSection-->
                 Aside
             </aside>
+        </div>
         </div>
         <footer> <!--footer-->
             Footer
