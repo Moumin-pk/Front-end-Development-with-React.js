@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Grid🥸</title>
+    <style>
+        .main{
+            width: 700px;
+            height: 600px;
+            border: 2px solid tomato;
+            margin: auto;
+            display: grid;
+            padding: 10px;
+            grid-template-columns: auto auto auto ;
+            column-gap: 10px;
+            row-gap: 20px; 
+        }
+        .main div{
+            padding: 50px;
+            background-color: teal;
+            border: 1px solid black;
+            font-size: 50px;
+            color: aliceblue;
+        }
+        #div1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        #div4{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        #div5{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    </style>
+</head>
+<body>
+    <h2>Display Grid🥸</h2>
+    <div class="main">
+        <div id="div1">1</div>
+        <div>2</div>
+        <div>3</div>
+        <div id="div4">4</div>
+        <div id="div5">5</div>
+        <div>6</div>
+    </div>
+</body>
+</html>
