@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function in JAva Script</title>
+</head>
+<body>
+    <h1>Function in JAva Script🍂</h1>
+    <h2>Calling User Define Function on Click Event👆</h2>
+     
+    <input type="text" name="" id="name" >
+    <button onclick="greet()">
+        Greet
+    </button>
+    <h1 class="greet" style="color: teal;"></h1>
+</body>
+<script>
+function greet() {
+   var name = document.getElementById('name').value;
+   var string = 'Hello!😊'+name;
+   document.getElementsByClassName('greet')[0].innerHTML= string ;
+}
+</script>
+</html>
