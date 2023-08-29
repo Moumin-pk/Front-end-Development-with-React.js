@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condition Statment</title>
+</head>
+<body>
+    <h1>JavaScript🔥Condition Statments</h1>
+    <label for="">Enter your Age: 
+    <input type="number"  id="age">
+    </label>
+    <button onclick="out()">Submit</button>
+    <h1 id="output" style="color: rosybrown;"></h1>
+    
+</body>
+<script>
+    // if(condition){
+
+    //}
+  
+
+    function out(){
+        // if-Else🔥
+    //     var age1 = document.getElementById('age').value;
+    // if(age1 > 18){
+    //     document.getElementById('output').innerHTML= 'yes candidate eligable❤️😇';
+    // }
+    // else{
+    //     document.getElementById('output').innerHTML= 'candidate eligable 18+🔞👋';
+    // }
+
+    // if else-if👋
+    var age1 = document.getElementById('age').value;
+    if(age1 >= 18){
+        document.getElementById('output').innerHTML= 'yes candidate eligable❤️😇';
+    }
+    else if (age1 == 17) {
+        document.getElementById('output').innerHTML= 'less than wait one more year🔞';
+    } else {
+        document.getElementById('output').innerHTML= 'candidate eligable 18+🔞👋';
+    }
+
+}
+    
+    
+</script>
+</html>

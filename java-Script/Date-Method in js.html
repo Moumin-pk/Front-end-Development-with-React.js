@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Date method in Java Script</h1>
+    <h1 id="date"></h1>
+    <button onclick="getdate()">DATE</button> 
+    <button onclick="year()">YEAR</button>
+    <button onclick="month()">Month</button>
+    <button onclick="hours()">hours</button>
+    <button onclick="todate()">Date</button>
+    <button onclick="day()">Day</button>
+    <button onclick="min()">Minute</button>
+    <button onclick="Time">Time</button>
+</body>
+<script>
+     var date= new Date();
+    function getdate(){
+    document.getElementById('date').innerHTML = date;
+    }
+    function year(){
+        document.getElementById('date').innerHTML = date.getFullYear();
+    }
+    function month(){
+        var months = [
+  "January", "February", "March",
+  "April", "May", "June",
+  "July", "August", "September",
+  "October", "November", "December"
+];
+document.getElementById('date').innerHTML =months[date.getMonth()];
+    }
+function hours(){
+    document.getElementById('date').innerHTML =date.getHours();
+}
+function todate(){
+    document.getElementById('date').innerHTML =date.getDate();
+}
+function day(){
+    document.getElementById('date').innerHTML =date.getDay();
+}
+function min(){
+    document.getElementById('date').innerHTML =date.getMinutes();
+}
+</script>
+</html>

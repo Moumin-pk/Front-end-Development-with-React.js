@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Each Loop</title>
+</head>
+<body>
+    <h1>For Each Loop</h1>
+   
+</body>
+<script>
+     var car =['KIA','Honda','Suzuki','Toyota','BIG'];
+
+    car.forEach(cars);
+    function cars(item,index,array){
+        array[index] = item+' 00';
+    }
+
+    car.forEach(car1);
+
+    function car1(item,index){
+        document.write(index +' => '+item+'<br><hr>')
+    }
+</script>
+</html>

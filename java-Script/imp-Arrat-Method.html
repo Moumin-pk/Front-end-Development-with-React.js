@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>IMP Method OF Array</h1>
+    <ul>
+        <li>
+            1️⃣ valueOf()
+            <ul>
+                <li>
+                    To Print the data of array</li>
+            </ul>
+        </li>
+        <li>
+            2️⃣ isArray()
+            <ul>
+                <li>check if the variable is an array or not?</li>
+            </ul>
+        </li>
+        <li>
+            3️⃣ Concat()
+            <ul>
+                <li>
+                    Join Severl arrays into one
+                </li>
+            </ul>
+        </li>
+        <li>
+            indexOf()
+            <ul>
+                <li>
+                    Returns the primitve value of the specified object
+                </li>
+            </ul>
+        </li>
+        <li>
+            join()
+            <ul>
+                <li>Combine elemnts of an array into a single string and return the String</li>
+            </ul>
+        </li>
+        <li>
+            <ul>pop()
+                <ul>
+                    <li>Removes the last element of an array</li>
+                </ul>
+            </ul>
+        </li>
+        <li>
+            Push()
+            <ul>
+                <li>Add a new elemnt at the end</li>
+            </ul>
+        </li>
+        <li>
+            reverse()
+            <ul>
+                <li>Sort elemens in descending order</li>
+            </ul>
+        </li>
+        <li>Shift()
+            <ul>
+                <li>Remove the first elem t of an array</li>
+            </ul>
+        </li>
+        <li>
+            Slice()
+            <ul>
+                <li>
+                    Pulls a copy of a portion of an array into a new array
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Implement the Methods😊👇</h2>
+    <h1 id="res"></h1>
+    <button onclick="pop()">POP</button>
+    <button onclick="push()">PUSH</button>
+    <button onclick="slice()">Slice</button>
+    <button onclick="reverse()">Reverse</button>
+    <button onclick="shift()">Shift</button>
+
+</body>
+<script>
+    // 2️⃣ isArray()
+    var arr = ['Mango', 'orange', 'Banana', 'Pineapple'];
+  
+    var flag = Array.isArray(arr);
+    document.write('<h1>'+flag+'</h1>');
+
+    // 1️⃣ valueOf()
+    var fruit = ['Mango', 'orange', 'Banana', 'Pineapple'];
+  
+    var fruitout = fruit.valueOf();
+    document.write('<h1>'+fruitout+'</h1>');
+
+    // join()
+    var cars = ['toyota','corola','MG','Suzuki','Audi'];
+    var carsout = cars.join(' |➡️ ');
+    document.write('<h1>'+carsout+'</h1>');
+
+    // concat()
+    var fruit = ['Mango', 'orange', 'Banana', 'Pineapple'];
+    var vegetable = ['ladyfinger', 'Patato', 'Ginger'];
+
+    var add = fruit.concat(vegetable);
+    var index = fruit.indexOf('Pineapple');
+    document.write('<h1>'+index+'</h1>');
+    document.write('<h1>'+add+'</h1>');
+
+
+    var bike  = ['honda', 'suzuki','Yammah', 'Kawaski']
+    var demo = bike;
+    document.getElementById('res').innerHTML = demo;
+    function pop() {
+        demo.pop();
+        document.getElementById('res').innerHTML = demo;
+    }
+    function push() {
+        var x = prompt('Please enter your favurite bike brand😊🚵‍♂️!');
+        demo.push(x);
+        document.getElementById('res').innerHTML = demo;
+    }
+    function slice(){
+        var M = prompt('Enter the number hoe to remove🔥')
+        var out = demo.slice(M);
+        document.getElementById('res').innerHTML = out;
+    }
+
+    function reverse(){
+         demo.reverse();
+        document.getElementById('res').innerHTML = demo;
+
+    }
+
+    function shift() {
+        var shi = demo.shift();
+        document.getElementById('res').innerHTML = shi;
+    }
+</script>
+</html>
