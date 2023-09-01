@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object</title>
+    <style>
+        h1{
+            font-size: 40px;
+            font-family: Verdana;
+            color: royalblue;
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <button onclick="pi()">PI</button>
+    <br>
+    <input type="number" id="inp" placeholder="enter the round number">
+    <button onclick="round()">Round</button>
+    <br>
+    <input type="number" id="num" placeholder="enter the number">
+    <input type="number" id="pow" placeholder="enter the power">
+    <button onclick="calc()">Calculate</button>
+    <br>
+    <input type="number" id="sqr" placeholder="enter the square number">
+    <button onclick="sqr()">Calculate</button>
+    <br>
+    <button onclick="otp()">CLick To Generate OTP</button>
+</body>
+<script>
+    function pi(){
+        var pi = Math.PI;
+        document.getElementsByTagName('h1')[0].innerText = pi;
+    }
+
+    function round(){
+        var x =  document.getElementById('inp').value;
+        var round = Math.round(x);
+        document.getElementsByTagName('h1')[0].innerText = round ;
+        document.getElementById('inp').value = " ";
+    }
+
+    function calc(){
+        var x =  document.getElementById('num').value;
+        var y =  document.getElementById('pow').value;
+        var calc = Math.pow(x,y);
+        document.getElementsByTagName('h1')[0].innerText = calc ;
+        document.getElementById('num').value = " ";
+        document.getElementById('pow').value = " ";
+    }
+
+    function sqr(){
+        var x =  document.getElementById('sqr').value;
+        var sqr = Math.sqrt(x);
+        document.getElementsByTagName('h1')[0].innerText = sqr ;
+        document.getElementById('sqr').value = " ";
+    }
+
+    function otp(){
+        var x = Math.floor(Math.random()*10000);
+        document.getElementsByTagName('h1')[0].innerText = x;
+    }
+</script>
+</html>

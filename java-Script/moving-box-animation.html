@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving in animation</title>
+    <style>
+        .yellow{
+            width: 500px;
+            height: 500px;
+            background: yellow;
+            position: relative;
+            margin-top: 20px;
+        }
+        #red{
+            width: 70px;
+            height: 70px;
+            background: red;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            
+        }
+        .btn{
+            width: 150px;
+            height: 40px;
+            font-size: 20px;
+            font-family: verdana;
+            background-color: black;
+            color: white;
+            transition: 0.4s;
+            border-radius: 20px;
+        }
+        .btn:hover{
+            background-color: white;
+            border: 1px solid black;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Moving Box Animation</h1>
+    <button class="btn" onclick="move()">Click ME!🔥</button>
+    <div class="yellow">
+        <div id="red"></div>
+    </div>
+</body>
+<script>
+    function move(){
+        var redElem = document.getElementById('red');
+        var poe = 0;
+        var anim = setInterval(animation,5);
+
+        function animation(){
+
+            if(poe == 430){
+                clearInterval(anim);
+            }else{
+                poe++;
+            redElem.style.top = poe+'px';
+            redElem.style.left= poe+'px'
+            }
+            
+            
+        }
+    }
+</script>
+</html>

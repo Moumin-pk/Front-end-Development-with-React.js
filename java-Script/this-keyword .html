@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <br>
+    <button onclick="remove(this)">Click and hide me</button>
+</body>
+<script>
+    var person = {
+        firstname: "Moumin",
+        lastname : "Ahmad",
+        fullname : function(){
+            return this.firstname +  this.lastname;
+        }
+    };
+    document.getElementsByTagName
+    ('h1')[0].innerText = person.fullname();
+
+    function remove(elem){
+        elem.style.border = '3px solid red';
+        
+    }
+</script>
+</html>

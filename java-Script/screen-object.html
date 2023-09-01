@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Object</title>
+    <style>
+        h1{
+            color:white;
+            font-size: 40px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <button onclick="AVLHeight()">AVL height</button>
+    <button onclick="AVLWidth()">AVL Width</button>
+    <button onclick="Color()">Color Depth</button>
+    <button onclick="Height()">Height</button>
+    <button onclick="pixel()">Pixel Depth</button>
+    <button onclick="width()">Width</button>
+</body>
+
+<script>
+    function AVLHeight(){
+        var Avlhight = screen.availHeight;
+        document.getElementsByTagName('h1')[0].innerText = 'Avail Height : '+Avlhight;
+    }
+    function AVLWidth(){
+        var Avlhight = screen.availWidth;
+        document.getElementsByTagName('h1')[0].innerText = 'Avail Width : '+Avlhight;
+    }
+    function Color(){
+        var Avlhight = screen.colorDepth;
+        document.getElementsByTagName('h1')[0].innerText = 'Color Depth : '+Avlhight;
+    }
+    function Height(){
+        var Avlhight = screen.height;
+        document.getElementsByTagName('h1')[0].innerText = 'Height : '+Avlhight;
+    }
+    function pixel(){
+        var Avlhight = screen.pixelDepth;
+        document.getElementsByTagName('h1')[0].innerText = 'Pixel Depth : '+Avlhight;
+    }
+    function width(){
+        var Avlhight = screen.width;
+        document.getElementsByTagName('h1')[0].innerText = 'Width : '+Avlhight;
+    }
+</script>
+</html>

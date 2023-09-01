@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set time out</title>
+</head>
+<body>
+    <h1>set time Out Method in Js</h1>
+    <button onclick="test()">Try It</button>
+    <h1 id="out"></h1>
+
+</body>
+<script>
+    function test() {
+        setTimeout(
+            function(){
+                document.getElementById('out').innerHTML = 'MOUMIN AHMAD';
+            },2000
+        )
+        
+       
+    }
+</script>
+</html>

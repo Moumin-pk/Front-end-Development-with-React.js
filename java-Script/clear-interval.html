@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear time interval</title>
+    <style>
+        #out{
+            font-size: 100px;
+            font-family: Verdana;
+            color: tan;
+        }
+    </style>
+</head>
+<body>
+    <h1>Clear time interval</h1>
+
+    <h1 id="out"></h1>
+  
+    <button onclick="stop()">stop</button>
+</body>
+
+<script>
+var my;
+
+// function start(){
+// my = setInterval(
+//     function(){
+//         alert('HI!😊')
+//     },2000
+// )
+// }
+
+// function stop(){
+// clearInterval(my);
+// }
+
+var my = setInterval(start,1000);
+var c = 0;
+function start(){
+    document.getElementById('out').innerHTML = c;
+    c++;
+
+    c = c < 10? "0"+c : c; 
+}
+
+function stop(){
+    clearInterval(my);
+}
+
+
+
+
+</script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java Script html Dom</title>
+</head>
+<body>
+    <h1>open and close new window Dom😊</h1>
+    <button onclick="openwin()">Open github</button>
+    
+    <button onclick="closewin()">Close github</button>
+
+</body>
+<script>
+    var win , win2;
+    function openwin(){
+       win = window.open("https://github.com/Moumin-pk","width=500px","height=500px");
+       win2 = window.open();
+    }
+    function closewin(){
+         win.close();
+         win2.close();
+        
+    }
+</script>
+</html>

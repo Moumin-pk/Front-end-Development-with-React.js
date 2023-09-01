@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Pattern</title>
+</head>
+<body>
+    <h1>Design Pattern</h1>
+    Enter the Number:
+    <input type="number" id="inp">
+    <button onclick="pattern()">Submit</button>
+    <p id="res"></p>
+</body>
+<script>
+    function pattern(){
+        var num = document.getElementById('inp').value;
+
+        for(var i =1; i<=num; i++){
+            for(var j =1;j<i;j++){
+                document.write("💝");
+            }
+            document.write("<br>")
+        }
+        for(var m =num; m>=1; m--){
+            for(var n =1;n<=m;n++){
+                document.write("🔥");
+            }
+            document.write("<br>")
+        }
+      
+    }
+</script>
+</html>

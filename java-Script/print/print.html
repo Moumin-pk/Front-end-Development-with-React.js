@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .img{
+            width:  550px;
+            height: 550px;
+            margin: auto;
+        }
+        .par{
+            width: 70%;
+            height: 50px;
+            margin: auto;
+        }
+        #data{
+            margin-top: -50px;
+        }
+        p{
+            text-align: justify;
+            font-size: larger;
+            font-family: verdana;
+            
+        }
+        .btn{
+            display: flex;
+            align-items: center;
+            justify-content: right;
+        }
+        button{
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body id="body">
+    <div class="btn">
+        <button onclick="printpage()">Print </button>
+    </div>
+    <H1 >Print Function</H1>
+    <div class="img">
+    <img  src="./MUHAMMAD AHMAD (1).png" alt="">
+</div>
+<div class="par">
+    <p id="data"> <mark> ipsum dolor sit amet consectetur adipisicing elit. Veniam nihil sapiente libero excepturi sit corrupti voluptate aliquam totam aperiam alias. Deserunt voluptatum molestias sunt hic officia facilis sed ipsam ex.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ut quaerat at modi itaque atque voluptatem, rerum et voluptatum sit, ad nam adipisci aspernatur quibusdam sint corporis repellendus ullam reprehenderit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aut vel perferendis vero id earum? Tempora neque aliquid obcaecati quia sequi doloremque, velit deserunt cumque, ipsam numquam, expedita laborum eum.</mark>
+    </p>
+    <p  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nihil sapiente libero excepturi sit corrupti voluptate aliquam totam aperiam alias. Deserunt voluptatum molestias sunt hic officia facilis sed ipsam ex.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ut quaerat at modi itaque atque voluptatem, rerum et voluptatum sit, ad nam adipisci aspernatur quibusdam sint corporis repellendus ullam reprehenderit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aut vel perferendis vero id earum? Tempora neque aliquid obcaecati quia sequi doloremque, velit deserunt cumque, ipsam numquam, expedita laborum eum.
+    </p>
+</div>
+<br>
+
+
+</body>
+<script>
+    function printpage(){
+        // window.print();
+        var body = document.getElementById('body').innerHTML;
+        var data = document.getElementById('data').innerHTML;
+        // Swaping
+        document.getElementById('body').innerHTML = data;
+        window.print();
+        document.getElementById('body').innerHTML = body ;
+    }
+</script>
+</html>
