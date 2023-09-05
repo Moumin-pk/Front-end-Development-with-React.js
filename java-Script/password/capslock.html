@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caps Lock Dedication</title>
+</head>
+<body>
+    <h1>Caps lock Dedication💝</h1>
+    <h2 id="alert"></h2>
+</body>
+<script>
+    window.addEventListener('keyup', event => {
+   var caps = event.getModifierState('CapsLock');
+       if(caps){
+        document.getElementById('alert').innerHTML= 'WARNING! CapsLock On!👹';
+       }
+       else{
+        document.getElementById('alert').innerHTML= 'WARNING! CapsLock off!🔥';
+       }
+    });
+</script>
+</html>

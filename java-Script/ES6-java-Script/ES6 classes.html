@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Es6 Clases</title>
+</head>
+<body>
+    <h1>Es6 Clases</h1>
+</body>
+<script>
+    
+    class person{
+  constructor(uName,uAge){
+   this.name = uName;
+    this.age = uAge
+  }
+  details(){
+    console.log(`this name of ${this.name} is ${this.age} years`);
+  }
+ }
+
+ const q = new person("Ali-Hassan",222);
+ const p = new person("moumin",123);
+p.details();
+q.details()
+
+</script>
+</html>

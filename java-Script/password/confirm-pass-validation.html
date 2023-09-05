@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: verdana;
+            color: white;
+        }
+        .form{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            margin: auto;
+            margin-top: 30%;
+            background-color: black;
+            border-radius: 20px;
+        
+        }
+        .head{
+            text-align: center;
+            color: white;
+        }
+        input{
+            width: 260px;
+            height: 20px;
+            margin-left: 15px;
+            border-radius: 5px;
+            border: 1px solid red;
+        }
+        input:focus{
+            border: 1px solid rosybrown;
+        }
+        label{
+            margin-left: 15px;
+        }
+        .btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -6px;
+        }
+        button{
+            width: 200px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <div class="head">
+            <h1>DEMIN</h1>
+            <h2>Registration Form</h2>
+        </div>
+        <div class="user-name">
+            <label for="username">
+                username*<br>
+                <input type="text" id="username" name="username">
+            </label>
+        <div>
+        
+        <div class="Password">
+            <label for="Password">
+                Password<br>
+                <input type="password" id="password" name="password" >
+            </label>
+        <div>
+
+        <div class="confirm-password">
+            <label for="confirm-password">
+                Confirm Password<br>
+                <input type="password" id="Confirm Password" name="Confirm Password" onkeyup="check(this)">
+                <p id="alert"></p>
+            </label>
+        </div>
+
+        <div class="btn">
+            <button id="btn">SUBMIT</button>
+        </div>
+    </div>
+</body>
+<script>
+    var password = document.getElementById('password');
+    function check(elem){
+        if(elem.value.length>0){
+            if(elem.value != password.value){
+                document.getElementById('alert').innerHTML = 'confirm password does not match';
+            }else{
+                document.getElementById('alert').innerHTML = '';
+            }
+        
+    }else{
+        document.getElementById('alert').innerHTML= 'enter confirm password';
+    }
+}
+</script>
+</html>

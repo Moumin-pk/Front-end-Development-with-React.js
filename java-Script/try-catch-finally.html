@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Catch And Finally</title>
+</head>
+<body>
+    <h1>Try Catch And Finally</h1>
+     
+    Please enter a number between 5 and 10
+    <input type="text" id="inp">
+    <button onclick="output()">Submit</button>
+    <h1 id="res"></h1>
+</body>
+
+<script>
+    var num = document.getElementById('inp');
+
+    function output(){
+        var data =num.value;
+
+        try{
+            if(isNaN(data)){
+                throw "This is not a number";
+            }else{
+                if(data>5 || data>10){
+                    throw "this is undefine mumber"
+                }else{
+                    throw "ok";
+                }
+            }
+        
+        }catch(mess){
+            document.getElementById('res').innerHTML =mess;
+        }finally{
+            num.value = "";
+        }
+    }
+</script>            
+</html>

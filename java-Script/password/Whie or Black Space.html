@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Space or Black Space Validation </title>
+</head>
+<body>
+    <h1>White Space or Black Space Validation using JavaScript Regexp</h1>
+    <input type="text" onkeyup="white(this.value)">
+    <h2 id="alert"></h2>
+</body>
+<script>
+    var pattern = /\s/g; // g -> global or \s  -> check white space existence
+    function white(elem){
+        var isSpace =pattern.test(elem);
+        var alert = document.getElementById('alert');
+        if(isSpace){
+            alert.innerHTML ='Space is not allow';
+        }else{
+            alert.innerHTML =' ';
+        }
+    }
+</script>
+</html>
